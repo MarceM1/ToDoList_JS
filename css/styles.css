@@ -1,0 +1,27 @@
+/* ***** Reset Styles ***** */
+
+*,::before,::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	max-width: 100vw;
+	min-height: 100vh;
+}
+
+body {
+	max-width: 100%;
+	min-height: 100%;
+}
+
+/* ***** Normalize Var ***** */
