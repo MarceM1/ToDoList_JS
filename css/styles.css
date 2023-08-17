@@ -1,27 +1,122 @@
 /* ***** Reset Styles ***** */
 
-*,::before,::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ol, ul, li {
-	list-style: none;
+ol,
+ul,
+li {
+  list-style: none;
 }
-
+ul {
+  margin: 0;
+  padding: 0;
+}
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 html {
-	max-width: 100vw;
-	min-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 body {
-	max-width: 100%;
-	min-height: 100%;
+  background-image: url(../ASSETS/img/7261117_3600167.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100vw !important;
+  min-height: 100vh;
 }
 
 /* ***** Normalize Var ***** */
+
+/* ***** Custom Styles ***** */
+
+body::before {
+  content: "";
+  height: 100%;
+  width: 103vw;
+  backdrop-filter: brightness(0.78);
+  position: absolute;
+}
+
+section {
+  height: auto;
+  background-color: rgba(227, 226, 224, 0.411);
+  backdrop-filter: blur(3px) brightness(0.85);
+  border: 1px solid rgba(216, 215, 211, 0.638);
+  border-radius: 15px 0 25px 0;
+  position: absolute;
+  box-shadow: 0 0 20px 3px hsl(182, 100%, 67%);
+}
+
+.header {
+  border: 1px solid rgba(216, 215, 211, 0.638);
+  border-radius: 15px 0 0 0;
+  background-image: url(../ASSETS/img/7261117_3600167.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+input {
+  background-color: rgba(75, 197, 199, 0.556);
+  border: none;
+  box-shadow: 0 0 3px 1px rgb(119, 72, 159);
+  box-shadow: 0 0 3px 2px rgb(94, 225, 235);
+  outline-style: none;
+  height: 2rem;
+}
+
+.tasks {
+  background-color: rgba(75, 197, 199, 0.556);
+  border-radius: 0 0 25px 0;
+}
+
+li {
+  background-color: rgba(125, 65, 182, 0.723);
+  border-radius: 5px;
+  width: 100%;
+  margin: 0.5rem 0.3rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+	
+}
+p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: antiquewhite;
+}
+
+
+
+.btn-delete {
+	display: flex;
+	background-color: #bc83b4;
+	border-radius: 0 5px 5px 0;
+	align-items: center;
+	justify-content: center;
+	padding: .4rem;
+	width: 15%; 
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+.btn-delete:hover {
+	box-shadow: 0 0 3px 2px #bc83b4;
+}
+
+
+

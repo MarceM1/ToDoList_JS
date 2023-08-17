@@ -3,20 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Bootstrap Styles -->
+    <!-- Bootstrap Styles -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
-		<!-- Custom Stylesheet -->
-		<link rel="stylesheet" href="./css/styles.css">
-		<title>Task Reminder</title>
+		<script src="./js/scrollreveal.js"></script>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+		
+    <title>To Do</title>
   </head>
-  <body>
-    <h1 class="display-1">Hola Marce! En que estas pensando hoy?</h1>
+  <body class="row d-flex flex-wrap align-items-center justify-content-center">
+    <div class="col-1 cold-md-2 col-lg-3 col-xl-4"></div>
+    <section
+      class="col-10 col-md-8 col-lg-6 col-xl-4 d-flex flex-column g-3 m-0 p-0" id="mainContainer"
+    >
+      <article class="header d-flex flex-column g-2 m-2 p-2">
+        <h5 class="display-6">To Do List</h5>
+        <form
+          class="d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <input type="text" class="p-1" id="task" />
+          <button type="btn" class="btn btn-outline-info my-4" id="addBtn">
+            Agregar
+          </button>
+        </form>
+      </article>
 
+      <article
+        class="tasks d-flex align-items-center justify-content-start m-2"
+      >
+        <ul class="d-flex flex-column g-5 w-50"></ul>
+      </article>
+      <article id="empty" class="p-2"><h5 class="text-white">No tienes tareas pendientes.</h5></article>
+    </section>
+    <div class="col-1 cold-md-2 col-lg-3 col-xl-4"></div>
 
     <!-- Bootstrap Scrips -->
     <script
@@ -29,6 +53,8 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
+		<!-- Scroll Reveal Custom Scripts -->
+		<script src="./js/scrollrevealScrips.js"></script>
     <!-- Main Scrips -->
     <script src="./js/main.js"></script>
   </body>
